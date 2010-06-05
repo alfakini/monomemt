@@ -1,0 +1,53 @@
+= monomeMT
+
+An implementation of monome for multitouch interfaces.
+
+== Usage
+
+You need to have installed pymt framework:
+
+$ git clone http://github.com/tito/pymt.git
+
+$ cd pymt/
+
+$ sudo python setup.py install
+
+Get monomeMT:
+
+$ git clone http://github.com/alfakini/monomemt.git
+
+Run:
+
+$ python monomemt.py
+
+You need to have an aplication to interface with monomeMT. You can found a list of apps on monome page:
+
+http://docs.monome.org/doku.php?id=app
+
+I did some tests using axiome: 
+
+http://docs.monome.org/doku.php?id=app:axiome
+
+For debug purpose, I'm using the debug.py script.
+
+== TODO
+
+* Config interface with:
+    ** button colors
+    ** border
+    ** server port
+    ** client port
+    ** host address
+    ** prefix
+    ** using flippable widget
+
+* Some monome messages not been implemented and aren't really required:
+    ** http://monome.org/data/app/monomeserial/osc
+    ** /prefix/led_col [col] [data0] [data1] [data2] ...
+    ** /prefix/frame [A B C D E F G H] [x] [y] 
+    ** /sys/cable To set up cable orientation. But with monomeMT you can rotate freely your monome
+    ** /sys/offset To use side by side more than one monome. Not really important to monomeMT
+    ** /sys/report
+
+* Volume control for axiome
+
