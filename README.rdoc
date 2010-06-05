@@ -2,9 +2,13 @@
 
 An implementation of monome for multitouch interfaces.
 
+== Screenshots
+
+http://alfakini.cc/monomemt/
+
 == Usage
 
-You need to have installed pymt framework:
+First, install pymt framework:
 
 $ git clone http://github.com/tito/pymt.git
 
